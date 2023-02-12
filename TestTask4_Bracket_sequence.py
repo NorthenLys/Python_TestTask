@@ -12,6 +12,8 @@ if len(bracket_seq)%2==0:
                     exit()
             elif ((bracket_seq[n_start] == bracket_seq[n_end-1]) and (bracket_seq[n_start]!= bracket_seq[n_end-1])) and ((bracket_seq[n_start+1] == bracket_seq[n_end]) and (bracket_seq[n_start+1] != bracket_seq[n_end])):
                 continue
+            elif (bracket_seq[n_start] == bracket_seq[n_end-1]) and (bracket_seq[n_start+1] == bracket_seq[n_end]):
+                continue
             else:
                 print('False')
                 exit()
