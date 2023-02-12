@@ -10,7 +10,10 @@ if len(bracket_seq)%2==0:
                 else:
                     print('False')
                     exit()
-            elif ((bracket_seq[n_start] == bracket_seq[n_end-1]) and (bracket_seq[n_start]!= bracket_seq[n_end-1])) and ((bracket_seq[n_start+1] == bracket_seq[n_end]) and (bracket_seq[n_start+1] != bracket_seq[n_end])):
+            elif bracket_seq[n_start] == bracket_seq[n_end]:
+                print('False')
+                exit()
+            elif (bracket_seq[n_start] == bracket_seq[n_end-1]) and (bracket_seq[n_start+1] == bracket_seq[n_end]):
                 continue
             else:
                 print('False')
