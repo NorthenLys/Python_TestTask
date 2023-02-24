@@ -1,4 +1,5 @@
 bracket_seq = str(input()) #Works only with '()' and '[]' type of brackets. Ex. for test [((())()(())]]
+#Don't work with ()()[] type of brasket sequence: match 'incorrect'. Fix in progress
 if len(bracket_seq)%2==0:
     n_start = 0
     n_end = len(bracket_seq)-1

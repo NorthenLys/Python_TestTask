@@ -1,6 +1,6 @@
 print('Please enter your name')
 name = str(input())
-if name == 'Вячеслав':
-    print('Привет,', name)
+if name == 'Алиса':
+    print('Приветствую, мастер,', name)
 else:
-    print('Нет такого имени')
+    print('Имени не существует, человек по имени', name)
